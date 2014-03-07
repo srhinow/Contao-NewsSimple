@@ -1,0 +1,2 @@
+Contao-NewsSimple
+=================
