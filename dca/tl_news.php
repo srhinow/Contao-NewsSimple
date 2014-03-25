@@ -36,6 +36,7 @@ if($GLOBALS['TL_CONFIG']['newsSimpleNoElements'] == 1)
     $GLOBALS['TL_DCA']['tl_news']['config']['switchToEdit'] = false;
 
     unset($GLOBALS['TL_DCA']['tl_news']['list']['operations']['editmeta']);
+    unset($GLOBALS['TL_DCA']['tl_news']['list']['operations']['editheader']);
 
     $GLOBALS['TL_DCA']['tl_news']['list']['operations']['edit']['href'] = 'act=edit';
 }

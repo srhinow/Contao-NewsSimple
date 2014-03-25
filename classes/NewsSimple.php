@@ -56,7 +56,15 @@ class NewsSimple extends \Frontend
 
             $strText = $objTemplate->parse();
 
-            $objNewsTemplate->text = $strText . $objNewsTemplate->text;
+            if($GLOBALS['TL_CONFIG']['newsSimpleNoElements'] == 1)
+            {
+                $objNewsTemplate->text = $strText;
+            }
+            else
+            {
+                $objNewsTemplate->text = $strText . $objNewsTemplate->text;
+            }
+
         }
     }
 }
