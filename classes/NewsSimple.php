@@ -27,11 +27,11 @@ class NewsSimple extends \Frontend
             // Clean the RTE output
             if ($objPage->outputFormat == 'xhtml')
             {
-                $strText = \String::toXhtml($arrArticle['newsText']);
+                $strText = \StringUtil::toXhtml($arrArticle['newsText']);
             }
             else
             {
-                $strText = \String::toHtml5($arrArticle['newsText']);
+                $strText = \StringUtil::toHtml5($arrArticle['newsText']);
             }
 
 // Add the static files URL to images
@@ -43,7 +43,7 @@ class NewsSimple extends \Frontend
 
             $objTemplate = new \FrontendTemplate('ce_text');
 
-            $objTemplate->text = \String::encodeEmail($strText);
+            $objTemplate->text = \StringUtil::encodeEmail($strText);
             $objTemplate->class = 'ce_text';
 
             // Add an image
