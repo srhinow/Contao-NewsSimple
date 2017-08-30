@@ -1,0 +1,35 @@
+{
+  "name": "felixpfeiffer/Contao-NewsSimple",
+  "description": "Bildet das bisherige Verhalten der Nachrichten in Contao 3.x nach",
+  "keywords": ["Nachrichten-Text", "Teaser", "nachrichten", "news"],
+  "type": "contao-module",
+  "homepage": "https://github.com/felixpfeiffer/Contao-NewsSimple",
+  "license": "LGPL",
+  "authors":[
+    {
+      "name":"Felix Pfeiffer : Neue Medien",
+      "homepage":"http://www.felixpfeiffer.de",
+      "role":"Developer"
+    }
+  ],
+  "support":{
+    "email": "info@felixpfeiffer.com",
+    "issues":"https://github.com/felixpfeiffer/Contao-NewsSimple/issues",
+    "source":"https://github.com/felixpfeiffer/Contao-NewsSimple"
+  },
+  "require": {
+    "php": ">=5.4",
+    "contao/core-bundle": ">=3.0.0, <4.0.0-dev",
+    "contao-community-alliance/composer-plugin":"~2.4 || ~3.0"
+  },
+  "replace": {
+    "contao-legacy/newssimple": "self.version"
+  },
+  "extra": {
+    "contao": {
+      "sources": {
+        "": "system/modules/news_simple"
+      }
+    }
+  }
+}
